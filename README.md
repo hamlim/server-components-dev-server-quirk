@@ -1,3 +1,19 @@
+# Server Components Dev Server Quirk
+
+This repo is a freshly created Next.js app via `yarn create next-app`, the only additonal changes I've made are:
+
+- Enable `serverComponents` in next.config.js
+- Set `runtime` to `'nodejs'` in next.config.js
+- Rename `pages/index.js` to `pages/index.server.js`
+
+## Issue:
+
+Running `yarn dev` will spin up the development server, however trying to visit `localhost:3000` in the browser and I get no response.
+
+Curling `localhost:3000` will timeout also.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
